@@ -1,3 +1,3 @@
 export function CardContatto() {
-  return;
+  return <h1>Sono Componente Card Contatto</h1>;
 }

@@ -1,3 +1,3 @@
 export function RubricaList() {
-  return;
+  return <h1>Sono pagina Rubrica</h1>;
 }

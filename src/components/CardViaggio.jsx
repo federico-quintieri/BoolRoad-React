@@ -1,3 +1,3 @@
 export function CardViaggio() {
-  return;
+  return <h1>Sono componente CardViaggio</h1>;
 }

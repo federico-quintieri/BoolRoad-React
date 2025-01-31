@@ -1,3 +1,3 @@
 export function SearchBarContatto() {
-  return;
+  return <h1>Sono Componente SearchBar Contatto</h1>;
 }
