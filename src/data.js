@@ -72,15 +72,31 @@ export const contatti = [
     cognome: "Bianchi",
     citta: "Milano",
     sesso: "Maschio",
+    viaggio_id: 1,
   },
-  { id: 2, nome: "Giulia", cognome: "Rossi", citta: "Roma", sesso: "Femmina" },
-  { id: 3, nome: "Marco", cognome: "Verdi", citta: "Napoli", sesso: "Maschio" },
+  {
+    id: 2,
+    nome: "Giulia",
+    cognome: "Rossi",
+    citta: "Roma",
+    sesso: "Femmina",
+    viaggio_id: 1,
+  },
+  {
+    id: 3,
+    nome: "Marco",
+    cognome: "Verdi",
+    citta: "Napoli",
+    sesso: "Maschio",
+    viaggio_id: 1,
+  },
   {
     id: 4,
     nome: "Elisa",
     cognome: "Ferrari",
     citta: "Torino",
     sesso: "Femmina",
+    viaggio_id: 1,
   },
   {
     id: 5,
@@ -88,6 +104,7 @@ export const contatti = [
     cognome: "Moretti",
     citta: "Firenze",
     sesso: "Maschio",
+    viaggio_id: 2,
   },
   {
     id: 6,
@@ -95,6 +112,7 @@ export const contatti = [
     cognome: "Conti",
     citta: "Bologna",
     sesso: "Femmina",
+    viaggio_id: 2,
   },
   {
     id: 7,
@@ -102,6 +120,7 @@ export const contatti = [
     cognome: "Galli",
     citta: "Genova",
     sesso: "Maschio",
+    viaggio_id: 3,
   },
   {
     id: 8,
@@ -109,5 +128,6 @@ export const contatti = [
     cognome: "Ricci",
     citta: "Venezia",
     sesso: "Femmina",
+    viaggio_id: 4,
   },
 ];

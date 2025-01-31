@@ -1,3 +1,7 @@
+import { useParams } from "react-router-dom";
+
 export function RubricaList() {
-  return <h1>Sono pagina Rubrica</h1>;
+  const { id } = useParams();
+
+  return <h1>Sono pagina {id}</h1>;
 }
