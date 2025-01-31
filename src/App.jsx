@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<AppLayout />}>
           <Route index element={<ViaggiList />} />
-          <Route path="/partecipanti/:id" element={<RubricaList />} />
+          <Route path="/contatti/:viaggioId" element={<RubricaList />} />
         </Route>
       </Routes>
     </BrowserRouter>
