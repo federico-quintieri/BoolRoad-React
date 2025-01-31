@@ -1,7 +1,6 @@
-export function CardContatto({ nome, cognome, viaggio_id }) {
+export function CardContatto({ nome, cognome}) {
   return (
     <>
-      <h1>{viaggio_id}</h1>
       <h2>
         {nome} {cognome}
       </h2>
