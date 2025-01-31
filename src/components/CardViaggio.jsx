@@ -8,7 +8,7 @@ export function CardViaggio({
   partenza,
 }) {
   return (
-    <div>
+    <div >
       <h3>{destinazione}</h3>
       <p>{durata}</p>
       <p>{prezzo}</p>
