@@ -12,6 +12,7 @@ function App() {
         <Route path="/" element={<AppLayout />}>
           <Route index element={<ViaggiList />} />
           <Route path="/contatti/:viaggioId" element={<RubricaList />} />
+          
         </Route>
       </Routes>
     </BrowserRouter>

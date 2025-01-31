@@ -19,21 +19,26 @@ export function RubricaList() {
   // Al mount del componente faccio filter dell'array contatti in base a viaggio_id
   useEffect(() => {
     setPartecipanti((prev_p) =>
-      prev_p.filter((p) => p.viaggio_id === parseInt(viaggioId))
+      prev_p.filter(
+        (curr_partecipante) =>
+          curr_partecipante.viaggio_id === parseInt(viaggioId)
+      )
     );
   }, []);
 
   // Callback che setta nuovo input a state
   const handleOnChange = (event) => {
-    setInputValue((prev_input) => event.target.value);
+    setInputValue(event.target.value);
   };
 
   // Ad onClick setto partecipanti in base a valore input
   const handleOnClick = () => {
     // Setto nuovo array partecipanti facendo filter in base a nome == inputValue
-    setPartecipanti((prev_p) =>
-      prev_p.filter((partecipante) =>
-        (partecipante.nome + " " + partecipante.cognome).includes(inputValue)
+    setPartecipanti(() =>
+      contatti.filter((partecipante) =>
+        (partecipante.nome + " " + partecipante.cognome)
+          .toLowerCase()
+          .includes(inputValue.toLowerCase())
       )
     );
   };
