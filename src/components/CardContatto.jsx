@@ -1,9 +1,21 @@
-export function CardContatto({ nome, cognome}) {
+export function CardContatto({ breve = true, nome, cognome, sesso, citta }) {
   return (
     <>
-      <h2>
-        {nome} {cognome}
-      </h2>
+      {breve ? (
+        <div>
+          <h2>
+            {nome} {cognome}
+          </h2>
+        </div>
+      ) : (
+        <div>
+          <h2>
+            {nome} {cognome}
+          </h2>
+          <p>{sesso}</p>
+          <p>{citta}</p>
+        </div>
+      )}
     </>
   );
 }
