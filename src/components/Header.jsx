@@ -1,3 +1,15 @@
+import { Link } from "react-router-dom";
+
 export function Header() {
-  return <h1>Sono componente Header</h1>;
+  return (
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Viaggi</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
 }
