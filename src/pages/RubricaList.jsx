@@ -33,15 +33,29 @@ export function RubricaList() {
 
   // Ad onClick setto partecipanti in base a valore input
   const handleOnClick = () => {
-    // Setto nuovo array partecipanti facendo filter in base a nome == inputValue
-    setPartecipanti(() =>
-      contatti.filter((partecipante) =>
-        (partecipante.nome + " " + partecipante.cognome)
-          .toLowerCase()
-          .includes(inputValue.toLowerCase())
-      )
-    );
+    setPartecipanti(() => {
+      // 🔹 Puliamo l'input: rimuoviamo spazi iniziali/finali e convertiamo tutto in minuscolo
+      const searchQuery = inputValue.trim().toLowerCase().replace(/\s+/g, "");
+  
+      // 🔹 Se l'input è vuoto, mostriamo tutti i contatti senza filtrarli
+      if (!searchQuery) return contatti;
+  
+      return contatti.filter(({ nome, cognome }) => {
+        // 🔹 Creiamo due possibili versioni del nome completo:
+        const fullName = `${nome}${cognome}`.toLowerCase(); // "MarioRossi"
+        const invertedFullName = `${cognome}${nome}`.toLowerCase(); // "RossiMario"
+  
+        // 🔹 Controlliamo se l'input corrisponde a una delle due versioni
+        return (
+          fullName.includes(searchQuery) || // Match con "MarioRossi"
+          invertedFullName.includes(searchQuery) // Match con "RossiMario"
+        );
+      });
+    });
   };
+  
+  
+  
 
   // Apri il modale con i dettagli del contatto
   const handleCardClick = (contatto) => {
