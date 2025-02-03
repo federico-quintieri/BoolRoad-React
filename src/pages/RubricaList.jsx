@@ -40,7 +40,7 @@ export function RubricaList() {
       // 🔹 Se l'input è vuoto, mostriamo tutti i contatti senza filtrarli
       if (!searchQuery) return partecipanti;
 
-      return contatti.filter(({ nome, cognome }) => {
+      return partecipanti.filter(({ nome, cognome }) => {
         // 🔹 Creiamo due possibili versioni del nome completo:
         const fullName = `${nome}${cognome}`.toLowerCase(); // "MarioRossi"
         const invertedFullName = `${cognome}${nome}`.toLowerCase(); // "RossiMario"
@@ -84,12 +84,12 @@ export function RubricaList() {
         {/* Map dei contatti */}
         {partecipanti &&
           partecipanti.map((p) => (
-            <div
+            <div className="mt-5"
               key={p.id}
               onClick={() => handleCardClick(p)}
               style={{ cursor: "pointer" }}
             >
-              <CardContatto nome={p.nome} cognome={p.cognome} />
+              <CardContatto viaggiatore={p} />
             </div>
           ))}
 
@@ -100,7 +100,7 @@ export function RubricaList() {
             tabIndex="-1"
             style={{ background: "rgba(0,0,0,0.5)" }}
           >
-            <div className="modal-dialog">
+            <div className="modal-dialog mt-5">
               <div className="modal-content">
                 <div className="modal-header">
                   <h5 className="modal-title">Dettagli Contatto</h5>
@@ -113,10 +113,7 @@ export function RubricaList() {
                 <div className="modal-body">
                   <CardContatto
                     breve={false}
-                    nome={selectedContact.nome}
-                    cognome={selectedContact.cognome}
-                    sesso={selectedContact.sesso}
-                    citta={selectedContact.citta}
+                    viaggiatore={selectedContact}
                   />
                 </div>
               </div>
