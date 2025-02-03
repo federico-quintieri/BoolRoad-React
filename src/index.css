@@ -4,16 +4,14 @@
     object-fit: cover;
 }
 
-.card-body.text-center.Attivo{
+.card.h-100.d-flex.Attivo{
     background-color: rgb(139, 187, 66);
 }
 
-.card-body.text-center.Pianificato{
+.card.h-100.d-flex.Pianificato{
     background-color: rgb(216, 220, 113);
 }
 
-.card-body.text-center.Avvenuto{
+.card.h-100.d-flex.Avvenuto{
     background-color: rgb(255, 145, 97);
 }
-
-/* {`card-body text-center ${status}`} */

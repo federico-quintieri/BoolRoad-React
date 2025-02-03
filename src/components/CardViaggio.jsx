@@ -6,9 +6,9 @@ export function CardViaggio({ vacanza }) {
 
   return (
     <>
-      <div className="card h-100 d-flex">
+      <div className= {`card h-100 d-flex mybg ${status}`}>
         <img src={immagine} className="card-img-top" alt={`Immagine non trovata`} />
-        <div className={`card-body text-center ${status}`}>
+        <div className="card-body text-center">
           <h5 className="card-title">{destinazione}</h5>
           <p className="card-text">{tipo}</p>
           <p className="card-text">Prezzo: {prezzo}€</p>
