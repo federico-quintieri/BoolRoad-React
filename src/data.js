@@ -10,7 +10,7 @@ export const viaggi = [
   },
   {
     id: 2,
-    status: "Pianificato",
+    status: "Attivo",
     destinazione: "Roma, Italia",
     durata: "5 giorni",
     prezzo: 800,
@@ -55,7 +55,7 @@ export const viaggi = [
   },
   {
     id: 7,
-    status: "Attivo",
+    status: "Pianificato",
     destinazione: "Reykjavik, Islanda",
     durata: "8 giorni",
     prezzo: 1700,
@@ -213,7 +213,7 @@ export const contatti = [
     gruppoSanguigno: "O+",
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
-      nome: "Anna Verdi",
+      nome: "Anna Marini",
       relazione: "Moglie",
       numeroDiTelefono: "+39 329 9988776"
     }
@@ -234,7 +234,7 @@ export const contatti = [
     gruppoSanguigno: "AB+",
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
-      nome: "Paolo Ferrari",
+      nome: "Paolo Rizzoli",
       relazione: "Marito",
       numeroDiTelefono: "+39 339 5544332"
     }
@@ -256,7 +256,7 @@ export const contatti = [
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
       nome: "Laura Moretti",
-      relazione: "Moglie",
+      relazione: "Sorella",
       numeroDiTelefono: "+39 328 7654321"
     }
   },
@@ -297,7 +297,7 @@ export const contatti = [
     gruppoSanguigno: "B+",
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
-      nome: "Elena Galli",
+      nome: "Elena Ravenna",
       relazione: "Moglie",
       numeroDiTelefono: "+39 347 6655443"
     }
@@ -319,7 +319,7 @@ export const contatti = [
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
       nome: "Andrea Ricci",
-      relazione: "Marito",
+      relazione: "Fratello",
       numeroDiTelefono: "+39 331 9988775"
     }
   },
@@ -339,7 +339,7 @@ export const contatti = [
     gruppoSanguigno: "O+",
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
-      nome: "Chiara Sarti",
+      nome: "Chiara Darsena",
       relazione: "Moglie",
       numeroDiTelefono: "+39 329 4455667"
     }
@@ -360,7 +360,7 @@ export const contatti = [
     gruppoSanguigno: "AB-",
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
-      nome: "Francesco Martini",
+      nome: "Francesco Rondin",
       relazione: "Marito",
       numeroDiTelefono: "+39 338 1122334"
     }
@@ -381,7 +381,7 @@ export const contatti = [
     gruppoSanguigno: "A+",
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
-      nome: "Laura Esposito",
+      nome: "Laura Lo Cutolo",
       relazione: "Moglie",
       numeroDiTelefono: "+39 338 9988770"
     }
@@ -402,7 +402,7 @@ export const contatti = [
     gruppoSanguigno: "B+",
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
-      nome: "Giorgio Gallo",
+      nome: "Giorgio Del Zio",
       relazione: "Marito",
       numeroDiTelefono: "+39 338 1122334"
     }
@@ -423,7 +423,7 @@ export const contatti = [
     gruppoSanguigno: "O-",
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
-      nome: "Giovanna Tosi",
+      nome: "Giovanna Rossi",
       relazione: "Moglie",
       numeroDiTelefono: "+39 323 7766554"
     }
@@ -445,7 +445,7 @@ export const contatti = [
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
       nome: "Stefano Zanetti",
-      relazione: "Marito",
+      relazione: "Fratello",
       numeroDiTelefono: "+39 320 4433221"
     }
   },
@@ -465,7 +465,7 @@ export const contatti = [
     gruppoSanguigno: "B-",
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
-      nome: "Sara Morelli",
+      nome: "Sara Arelli",
       relazione: "Moglie",
       numeroDiTelefono: "+39 332 6655443"
     }
@@ -486,7 +486,7 @@ export const contatti = [
     gruppoSanguigno: "O+",
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
-      nome: "Luca Basile",
+      nome: "Luca Fano",
       relazione: "Marito",
       numeroDiTelefono: "+39 324 5566778"
     }
@@ -507,7 +507,7 @@ export const contatti = [
     gruppoSanguigno: "A+",
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
-      nome: "Giulia Ricci",
+      nome: "Giulia Neri",
       relazione: "Moglie",
       numeroDiTelefono: "+39 333 9988779"
     }
@@ -528,7 +528,7 @@ export const contatti = [
     gruppoSanguigno: "B+",
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
-      nome: "Paolo Fiore",
+      nome: "Paolo Pe",
       relazione: "Marito",
       numeroDiTelefono: "+39 329 8776655"
     }
@@ -543,14 +543,14 @@ export const contatti = [
     telefono: "+39 336 2233445",
     email: "matteo.deluca@email.com",
     codiceFiscale: "DLCMTT85P12F839S",
-    eta: 37,
+    eta: 23,
     documenti: "Carta d'Identità SI123456",
     allergie: "Nessuna",
     gruppoSanguigno: "O+",
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
-      nome: "Beatrice De Luca",
-      relazione: "Moglie",
+      nome: "Beatrice Basile",
+      relazione: "Madre",
       numeroDiTelefono: "+39 338 6677889"
     }
   },
@@ -564,14 +564,14 @@ export const contatti = [
     telefono: "+39 338 6677889",
     email: "beatrice.neri@email.com",
     codiceFiscale: "NREBTR88E52G224T",
-    eta: 34,
+    eta: 21,
     documenti: "Passaporto MO234567",
     allergie: "Nessuna",
     gruppoSanguigno: "A-",
     esigenzeAlimentari: "Nessuna",
     contattoEmergenza: {
       nome: "Matteo Neri",
-      relazione: "Marito",
+      relazione: "Padre",
       numeroDiTelefono: "+39 336 2233445"
     }
   }
