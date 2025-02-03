@@ -38,7 +38,7 @@ export function RubricaList() {
       const searchQuery = inputValue.trim().toLowerCase().replace(/\s+/g, "");
 
       // 🔹 Se l'input è vuoto, mostriamo tutti i contatti senza filtrarli
-      if (!searchQuery) return contatti;
+      if (!searchQuery) return partecipanti;
 
       return contatti.filter(({ nome, cognome }) => {
         // 🔹 Creiamo due possibili versioni del nome completo:
