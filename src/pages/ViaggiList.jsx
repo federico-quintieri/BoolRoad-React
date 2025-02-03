@@ -29,6 +29,7 @@ export function ViaggiList() {
                   partenza={vacanza.partenza}
                   prezzo={vacanza.prezzo}
                   tipo={vacanza.tipo}
+                  immagine={vacanza.immagine}
                   key={vacanza.id}
                 />
               </div>
