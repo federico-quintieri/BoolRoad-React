@@ -16,6 +16,7 @@ export function ViaggiList() {
 
   return (
     <>
+    <div className="min-vh-100">
       {/* Filter di vacanze per generare card */}
       {vacanze &&
         vacanze.map((vacanza) => (
@@ -29,6 +30,7 @@ export function ViaggiList() {
             key={vacanza.id}
           />
         ))}
+        </div>
     </>
   );
 }
