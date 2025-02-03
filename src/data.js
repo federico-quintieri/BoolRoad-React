@@ -6,6 +6,7 @@ export const viaggi = [
     prezzo: 1500,
     tipo: "Cultura e Tecnologia",
     partenza: "Oggi",
+    immagine: "/images/Giappone.jpeg"
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ export const viaggi = [
     prezzo: 2000,
     tipo: "Metropoli e Shopping",
     partenza: "Oggi",
+    immagine: "/images/Usa.jpg"
   },
   {
     id: 4,
@@ -38,6 +40,7 @@ export const viaggi = [
     prezzo: 1200,
     tipo: "Romantico e Cultura",
     partenza: "Oggi",
+    immagine: "/images/Francia.jpg"
   },
   {
     id: 6,
@@ -54,6 +57,7 @@ export const viaggi = [
     prezzo: 1700,
     tipo: "Paesaggi e Avventura",
     partenza: "Oggi",
+    immagine: "/images/Islanda.jpg"
   },
   {
     id: 8,

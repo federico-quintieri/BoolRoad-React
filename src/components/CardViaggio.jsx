@@ -6,11 +6,12 @@ export function CardViaggio({
   prezzo,
   tipo,
   partenza,
+  immagine
 }) {
   return (
     <>
       <div className="card h-100">
-            <img src="..." className="card-img-top" alt={`Immagine non trovata`} />
+            <img src={immagine} className="card-img-top" alt={`Immagine non trovata`} />
             <div className="card-body">
                 <h5 className="card-title">{destinazione}</h5>
                 <p className="card-text">{tipo}</p>
