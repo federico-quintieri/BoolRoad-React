@@ -3,3 +3,17 @@
     height: 200px;
     object-fit: cover;
 }
+
+.card-body.text-center.Attivo{
+    background-color: rgb(139, 187, 66);
+}
+
+.card-body.text-center.Pianificato{
+    background-color: rgb(216, 220, 113);
+}
+
+.card-body.text-center.Avvenuto{
+    background-color: rgb(255, 145, 97);
+}
+
+/* {`card-body text-center ${status}`} */
