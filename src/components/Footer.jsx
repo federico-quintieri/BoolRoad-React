@@ -10,7 +10,7 @@ export function Footer() {
         BoolRoad
       </Link>
 
-      <ul className="nav col-md-4 text-white gap-3 ">
+      <ul className="nav col-md-4 justify-content-end text-white gap-3 ">
         <li className="nav-item text-decoration-none">Home</li>
         <li className="nav-item text-decoration-none ">Features</li>
         <li className="nav-item text-decoration-none">Pricing </li>
