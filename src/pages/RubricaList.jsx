@@ -72,11 +72,14 @@ export function RubricaList() {
     <>
       <div className="min-vh-100">
         {/* Searchbar contatto */}
-        <label htmlFor="" className="mb-4" >
-          Cerca contatto{" "}
-          <input type="text" value={inputValue} onChange={handleOnChange} />
-        </label>
-        <button onClick={handleOnClick}>Cerca</button>
+        <div>
+          <label htmlFor="" className="form-label" >
+            Cerca contatto{" "}
+            <input type="text" className="form-control" value={inputValue} onChange={handleOnChange} />
+          </label>
+          <button className="btn btn-primary" style={{ marginLeft: '10px',marginBottom: '6px' }} onClick={handleOnClick}>Cerca</button>
+        </div>
+
 
         {/* Map dei contatti */}
         {partecipanti &&

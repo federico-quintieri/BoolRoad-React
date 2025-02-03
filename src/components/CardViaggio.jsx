@@ -8,13 +8,17 @@ export function CardViaggio({
   partenza,
 }) {
   return (
-    <div >
-      <h3>{destinazione}</h3>
-      <p>{durata}</p>
-      <p>{prezzo}</p>
-      <p>{tipo}</p>
-      <p>{partenza}</p>
-      <Link to={`/contatti/${id}`}>Partecipanti</Link>
-    </div>
+    <>
+      <div className="card h-100">
+            <img src="..." className="card-img-top" alt={`Immagine non trovata`} />
+            <div className="card-body">
+                <h5 className="card-title">{destinazione}</h5>
+                <p className="card-text">{tipo}</p>
+                <p className="card-text">Prezzo: {prezzo}€</p>
+                <p className="card-text">Durata: {durata}</p>
+                <Link className="btn btn-primary" to={`/contatti/${id}`}>Mostra Partecipanti</Link>
+            </div>
+        </div>
+    </>
   );
 }
