@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { contatti } from "../data";
 import { CardContatto } from "../components/CardContatto";
+import { Alert } from "bootstrap";
 
 export function RubricaList() {
   // Prendo parametro url viaggioId che è una stringa
@@ -37,9 +38,6 @@ export function RubricaList() {
       // 🔹 Puliamo l'input: rimuoviamo spazi iniziali/finali e convertiamo tutto in minuscolo
       const searchQuery = inputValue.trim().toLowerCase().replace(/\s+/g, "");
 
-      // 🔹 Se l'input è vuoto, mostriamo tutti i contatti senza filtrarli
-      if (!searchQuery) return contatti;
-
       return contatti.filter(({ nome, cognome }) => {
         // 🔹 Creiamo due possibili versioni del nome completo:
         const fullName = `${nome}${cognome}`.toLowerCase(); // "MarioRossi"
@@ -54,9 +52,6 @@ export function RubricaList() {
     });
   };
 
-
-
-
   // Apri il modale con i dettagli del contatto
   const handleCardClick = (contatto) => {
     setSelectedContact(contatto);
@@ -67,19 +62,29 @@ export function RubricaList() {
     setSelectedContact(null);
   };
 
-
   return (
     <>
       <div className="min-vh-100">
         {/* Searchbar contatto */}
         <div>
-          <label htmlFor="" className="form-label" >
+          <label htmlFor="" className="form-label">
             Cerca contatto{" "}
-            <input type="text" className="form-control" value={inputValue} onChange={handleOnChange} />
+            <input
+              type="text"
+              className="form-control"
+              value={inputValue}
+              onChange={handleOnChange}
+            />
           </label>
-          <button className="btn btn-primary" style={{ marginLeft: '10px',marginBottom: '6px' }} onClick={handleOnClick}>Cerca</button>
+          <button
+            className="btn btn-primary"
+            style={{ marginLeft: "10px", marginBottom: "6px" }}
+            onClick={handleOnClick}
+            required
+          >
+            Cerca
+          </button>
         </div>
-
 
         {/* Map dei contatti */}
         {partecipanti &&
