@@ -16,21 +16,25 @@ export function ViaggiList() {
 
   return (
     <>
-    <div className="min-vh-100">
-      {/* Filter di vacanze per generare card */}
-      {vacanze &&
-        vacanze.map((vacanza) => (
-          <CardViaggio
-            destinazione={vacanza.destinazione}
-            durata={vacanza.durata}
-            id={vacanza.id}
-            partenza={vacanza.partenza}
-            prezzo={vacanza.prezzo}
-            tipo={vacanza.tipo}
-            key={vacanza.id}
-          />
-        ))}
+      <div className="min-vh-100">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4" >
+          {/* Filter di vacanze per generare card */}
+          {vacanze &&
+            vacanze.map((vacanza) => (
+              <div className="col mb-5" key={vacanza.id}>
+                <CardViaggio
+                  destinazione={vacanza.destinazione}
+                  durata={vacanza.durata}
+                  id={vacanza.id}
+                  partenza={vacanza.partenza}
+                  prezzo={vacanza.prezzo}
+                  tipo={vacanza.tipo}
+                  key={vacanza.id}
+                />
+              </div>
+            ))}
         </div>
+      </div>
     </>
   );
 }
