@@ -33,7 +33,7 @@ export const viaggi = [
     durata: "12 giorni",
     prezzo: 1800,
     tipo: "Mare e Relax",
-    immagine: "/images/Bali.jpg"
+    immagine: "/images/bali.webp"
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ export const viaggi = [
     durata: "9 giorni",
     prezzo: 2200,
     tipo: "Avventura e Natura",
-    immagine: "/images/Sydney.jpg"
+    immagine: "/images/Sydney.webp"
   },
   {
     id: 7,
@@ -69,7 +69,7 @@ export const viaggi = [
     durata: "7 giorni",
     prezzo: 1300,
     tipo: "Esotico e Gastronomia",
-    immagine: "/images/Bangkok.jpg"
+    immagine: "/images/Bangkok.webp"
   },
   {
     id: 9,
@@ -78,7 +78,7 @@ export const viaggi = [
     durata: "5 giorni",
     prezzo: 1000,
     tipo: "Cultura e Shopping",
-    immagine: "/images/Londra.jpg"
+    immagine: "/images/Londra.webp"
   },
   {
     id: 10,
@@ -87,7 +87,7 @@ export const viaggi = [
     durata: "4 giorni",
     prezzo: 850,
     tipo: "Arte e Spiaggia",
-    immagine: "/images/Barcellona.jpg"
+    immagine: "/images/Barcellona.webp"
   },
   {
     id: 11,
@@ -96,7 +96,7 @@ export const viaggi = [
     durata: "8 giorni",
     prezzo: 2500,
     tipo: "Avventura e Cultura",
-    immagine: "/images/MachuPicchu.jpg"
+    immagine: "/images/MachuPicchu.webp"
   },
   {
     id: 12,
@@ -105,7 +105,7 @@ export const viaggi = [
     durata: "10 giorni",
     prezzo: 2700,
     tipo: "Safari e Natura",
-    immagine: "/images/CapeTown.jpg"
+    immagine: "/images/CapeTown.webp"
   },
   {
     id: 13,
@@ -114,7 +114,7 @@ export const viaggi = [
     durata: "6 giorni",
     prezzo: 1100,
     tipo: "Storia e Spiaggia",
-    immagine: "/images/Atene.jpg"
+    immagine: "/images/Atene.webp"
   },
   {
     id: 14,
@@ -123,7 +123,7 @@ export const viaggi = [
     durata: "7 giorni",
     prezzo: 2300,
     tipo: "Lusso e Shopping",
-    immagine: "/images/Dubai.jpg"
+    immagine: "/images/Dubai.webp"
   },
   {
     id: 15,
@@ -132,7 +132,7 @@ export const viaggi = [
     durata: "9 giorni",
     prezzo: 2500,
     tipo: "Safari e Natura",
-    immagine: "/images/CittadelCapo.jpg"
+    immagine: "/images/CittadelCapo.webp"
   },
   {
     id: 16,
@@ -141,7 +141,7 @@ export const viaggi = [
     durata: "10 giorni",
     prezzo: 2000,
     tipo: "Avventura e Paesaggi Naturali",
-    immagine: "/images/Reykjavik.jpg"
+    immagine: "/images/Reykjavik.webp"
   },
   {
     id: 17,
@@ -150,7 +150,7 @@ export const viaggi = [
     durata: "5 giorni",
     prezzo: 1600,
     tipo: "Divertimento e Casinò",
-    immagine: "/images/LasVegas.jpg"
+    immagine: "/images/LasVegas.webp"
   }
 ];
   
